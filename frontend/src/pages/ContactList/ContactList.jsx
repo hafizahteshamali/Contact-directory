@@ -48,7 +48,7 @@ const ContactList = () => {
         {useData.length === 0 ? (
           <div className="text-center">Contacts Data not Found...!</div>
         ) : (
-          useData.map((item, index) => {
+          useData?.map((item, index) => {
             return (
               <div className="w-[80%] p-3 m-auto flex justify-between items-center">
                 <div className="flex items-center gap-5">
