@@ -4,6 +4,7 @@ import cors from "cors";
 import { ContactRoutes } from "./Routes/ContactRoutes.js";
 import mongoose from "mongoose";
 
+
 const app = express();
 dotenv.config();
 app.use(cors());
