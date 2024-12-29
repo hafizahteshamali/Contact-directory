@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const ApiClient = axios.create({
-    baseURL: "http://contact-directory-ten.vercel.app/",
+    baseURL: "https://contact-directory-ten.vercel.app/",
     timeout: 2000,
     headers:{
         "Content-Type": "application/json"
