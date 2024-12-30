@@ -10,6 +10,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Header from "../../Components/Header/Header";
 
 const ContactList = () => {
   const dispatch = useDispatch();
@@ -42,7 +43,9 @@ const ContactList = () => {
   }, []);
 
   return (
-    <div className="text-2xl">
+    <>
+      <Header />
+    <div className="text-2xl mb-4">
       <h1 className="text-center text-4xl font-extrabold">All Contacts</h1>
       <div className="min-h-[500px] bg-[#b6b1b1] rounded-xl mt-4 w-[800px] m-auto p-4">
         {useData.length === 0 ? (
@@ -86,6 +89,7 @@ const ContactList = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

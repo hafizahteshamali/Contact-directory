@@ -5,6 +5,7 @@ import { AddAllContact, UpdateAllContact } from "../../Redux/Reducers/ContactRed
 import { toast } from "react-toastify";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import Header from "../../Components/Header/Header";
 
 const AddContact = ({isUpdate}) => {
 
@@ -51,6 +52,8 @@ const AddContact = ({isUpdate}) => {
   }, [isUpdate, existData, reset]);
 
   return (
+    <>
+      <Header />
     <div className="min-h-[100vh] w-[100%] flex justify-center items-center bg-[#ddd]">
       <div className="w-[500px] bg-white">
 
@@ -80,6 +83,7 @@ const AddContact = ({isUpdate}) => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
